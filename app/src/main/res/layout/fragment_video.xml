@@ -10,6 +10,7 @@
         android:layout_width="400dp"
         android:layout_height="400dp"
         android:id="@+id/videoView"
+
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -18,7 +19,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/VideoBtn"
+        android:background="@drawable/rounded_corner_button"
         android:text="Video"
+        android:drawableRight="@drawable/ic_baseline_videocam_24"
         android:textSize="19sp"
         app:layout_constraintTop_toBottomOf="@+id/videoView"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -31,12 +34,16 @@
         android:layout_height="wrap_content"
         android:id="@+id/gallery"
         android:text="Gallery"
+        android:background="@drawable/rounded_corner_button"
         android:textSize="19sp"
+        android:drawableRight="@drawable/ic_baseline_create_new_folder_24"
         app:layout_constraintTop_toBottomOf="@+id/VideoBtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        app:layout_constraintRight_toRightOf="parent"
+        >
     </Button>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

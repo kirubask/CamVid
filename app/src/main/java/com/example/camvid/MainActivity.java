@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
 public class MainActivity extends AppCompatActivity {
     Button camera;
     Button video;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
                video.setVisibility(view.GONE);
             }
         });
+
         video.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
     }
 
     private void replaceFragment(Fragment fragment) {
